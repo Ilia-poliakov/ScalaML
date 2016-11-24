@@ -3,7 +3,6 @@ package ru.ilya.ml
 
 object LinearRegression {
 
-  // http://www.math-pr.com/exampl_sts3.htm
   def buildModel(dataFrames: List[DataFrame]): (Double => Double) = {
 
     val sumMetrics = dataFrames.reduce(_ + _)

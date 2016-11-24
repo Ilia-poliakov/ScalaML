@@ -8,7 +8,7 @@ object Main {
     val humanMetrics: List[DataFrame] = DataFrame.fromCsv("Davis.csv").filter(f => f.x < 115)
     val y = LinearRegression.buildModel(humanMetrics)
 
-    println(y(65))
+    println(y(30))
 
   }
 }
